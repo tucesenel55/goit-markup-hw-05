@@ -178,7 +178,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   position: relative;
   display: grid;
@@ -637,8 +637,6 @@ img {
   fill: #31d0aa;
 }
 
-
-
 .footer-social-media p {
   margin-top: 0px;
   color: white;
@@ -656,3 +654,109 @@ img {
   display: flex;
   flex-direction: row;
 }
+
+.footer-subscribe {
+  position: relative;
+  top: 0px;
+  left: 375px;
+  width: 453px;
+  height: 80px;
+}
+
+.footer-subscribe-text {
+  width: 75px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-text p {
+  position: absolute;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: white;
+  margin: 0 auto;
+}
+
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+}
+
+input {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0px;
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #2e2f42;
+}
+
+input::placeholder {
+  padding-left: 16px;
+  width: 36px;
+  height: 24px;
+
+  gap: 0px;
+  opacity: 0px;
+
+  color: white;
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.footer-subscribe-button {
+  position: absolute;
+  top: 40px;
+  left: 288px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border: 0px;
+  padding: 0px;
+  border-radius: 4px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-subscribe-button-text {
+  width: 77px;
+  height: 24px;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.footer-subscribe-button-text p {
+  width: 77px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+
+.icon-paper-plane {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 117px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+

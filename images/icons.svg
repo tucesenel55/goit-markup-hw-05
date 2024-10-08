@@ -84,5 +84,12 @@
 <path fill="#f4f4fd" style="fill: var(--color1, #f4f4fd)" d="M6.717 12.782h3.981v12.818h-3.981v-12.818z"></path>
 <path fill="#f4f4fd" style="fill: var(--color1, #f4f4fd)" d="M8.706 6.4c-1.273 0-2.306 1.033-2.306 2.306s1.033 2.327 2.306 2.327c1.273 0 2.306-1.054 2.306-2.327s-1.034-2.306-2.306-2.306v0z"></path>
 </symbol>
+
+<symbol id="icon-paper-plane" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.998 13.488 0.010 0.003-0.012-0.003v7.345l5.735-5.576 7.265 2.242 5-23.333z"></path>
+</symbol>
 </defs>
 </svg>
+
+
+
