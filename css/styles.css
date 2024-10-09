@@ -679,39 +679,37 @@ img {
   margin: 0 auto;
 }
 
-.footer-subscribe-input {
+.subscribe-e-mail {
   width: 264px;
   height: 40px;
-}
-
-input {
-  position: relative;
-  box-sizing: border-box;
-  padding: 0px;
-  width: 264px;
-  height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: white;
+  background-color: transparent;
+  border: 1px, solid, white;
   border-radius: 4px;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 4px 4px 0px #00000026;
-  background-color: #2e2f42;
+  padding-left: 12px;
+  position: relative;
 }
 
-input::placeholder {
-  padding-left: 16px;
+.subscribe-e-mail::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
   width: 36px;
   height: 24px;
-
-  gap: 0px;
-  opacity: 0px;
-
   color: white;
+}
 
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: left;
+input[id="subscribe-e-mail"] {
+  background-color: #2e2f42;
+  border: 0px;
+  padding-left: 16px;
+  padding-top: 8px;
+  color: white;
 }
 
 .footer-subscribe-button {
@@ -770,14 +768,277 @@ input::placeholder {
   top: 80px;
   left: 516px;
   gap: 0px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px;
   opacity: 0px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   box-shadow: 0px 1px 1px 0px #00000024;
 
-  box-shadow: 0px 1px 3px 0px #0000001F;
-  
+  box-shadow: 0px 1px 3px 0px #0000001f;
+
   box-shadow: 0px 2px 1px 0px #00000033;
-  
 }
 
+.modal-form-accept {
+  width: 360px;
+  height: 16px;
+  padding-left: 24px;
+}
+
+.icon-x {
+  fill: #e7e9fc;
+  border-radius: 100%;
+  cursor: pointer;
+  top: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, var(--color2), var(--color3);
+}
+
+.icon-x:hover {
+  fill: #404bbf;
+  --color2: #404bbf;
+  --color3: white;
+}
+
+.modal-form-close-button {
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding-left: 360px;
+  padding-top: 24px;
+}
+
+.modal-form p {
+  position: absolute;
+  box-sizing: content-box;
+  width: 360px;
+  height: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.input-icons {
+  fill: #2e2f42;
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.modal-form-name {
+  box-sizing: content-box;
+  padding-left: 24px;
+  padding-top: 64px;
+  width: 360px;
+  height: 58px;
+}
+
+.modal-form-phone {
+  box-sizing: content-box;
+  padding-left: 24px;
+  padding-top: 8px;
+  width: 360px;
+  height: 58px;
+}
+
+.modal-form-email {
+  box-sizing: content-box;
+  padding-left: 24px;
+  padding-top: 8px;
+  width: 360px;
+  height: 58px;
+}
+
+.modal-comment {
+  box-sizing: content-box;
+  margin-bottom: 16px;
+  padding-left: 24px;
+  padding-top: 8px;
+  width: 360px;
+  height: 58px;
+}
+
+input[id="check"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  border: 1px solid #2e2f4266;
+}
+
+#send-button {
+  width: 169px;
+  height: 56px;
+  background-color: #4d5ae5;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 4px;
+  opacity: 0px;
+  color: white;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  border: 0px;
+}
+
+.modal-form-send-button {
+  padding-top: 24px;
+  padding-left: 119px;
+}
+
+input[id="name"] {
+  width: 360px;
+  height: 40px;
+  background-color: #fcfcfc;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+input[id="name"]:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+input[id="phone"]:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+input[id="e-mail"]:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+.modal-comment textarea:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+input[id="phone"] {
+  width: 360px;
+  height: 40px;
+  background-color: #fcfcfc;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+input[id="e-mail"] {
+  width: 360px;
+  height: 40px;
+  background-color: #fcfcfc;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.input-name-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 40px;
+  top: 138px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.input-phone-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 40px;
+  top: 204px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.input-email-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 40px;
+  top: 270px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.modal-form label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #8e8f99;
+}
+
+.modal-comment {
+  width: 360px;
+  height: 138px;
+}
+
+.modal-form-accept {
+  box-sizing: content-box;
+  width: 360px;
+  height: 16px;
+}
+
+.modal-form-accept label {
+  width: 360px;
+  height: 16px;
+}
+
+.modal-comment textarea {
+  width: 360px;
+  height: 120px;
+  gap: 0px;
+  border-radius: 4px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #fcfcfc;
+  border: 1px solid #8e8f99;
+}
+
+textarea::placeholder {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f4266;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+#modal-form-accept-text {
+  width: 338px;
+  height: 16px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-top: 0px;
+  top: 464px;
+  color: #757575;
+}
